@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 20px 5px 0;
+    box-sizing: border-box;
+}
+.btn-cart, .buy-btn {
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+}
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}

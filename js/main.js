@@ -5,15 +5,15 @@ const products = [
     {id: 4, title: 'Gamepad', price: 50},
 ];
 
-const renderProduct = (title, price) => {
+const renderProduct = (title="Item", price="150") => {
     return `<div class="product-item">
                 <h3>${title}</h3>
                 <p>${price}</p>
-                <button class="buy-btn">Купить</button>
+                <button class="buy-btn">Buy</button>
             </div>`
 };
-const renderPage = list => {
-    const productsList = list.map(item => renderProduct(item.title, item.price));
+const renderPage = (list=[]) => {
+    const productsList = list.map(({title, price}) => renderProduct(title, price));
     productsList.forEach(element => {
         document.querySelector('.products').innerHTML += element;
     });
